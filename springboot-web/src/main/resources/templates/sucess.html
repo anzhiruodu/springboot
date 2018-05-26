@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:text="${hello}">nihao</div>
+	<!-- 上面的会被转义，下面的不会转义 -->
+	<div th:utext="${hello}"></div>
+	<hr/>
+<h4 th:each="user:${users}" th:text="${user}"></h4>
+<hr>
+<!-- [[${user}]]写在标签的里面，[()]对应的是th:utext -->
+<h4>
+	<span th:each="user:${users}">[[${user}]]</span>
+</h4>	
+</body>
+</html>
