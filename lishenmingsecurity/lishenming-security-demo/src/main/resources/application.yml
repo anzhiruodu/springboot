@@ -7,6 +7,6 @@ spring:
     url: jdbc:mysql://localhost:3306/department?useSSL=false
   session:
     store-type: none
-security:
-  basic:
-    enabled: false
+#security:
+#  basic:
+#    enabled: true
