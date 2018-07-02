@@ -1,0 +1,10 @@
+2018-07-02 19:16:02.646  INFO 22068 --- [main] com.lishenming.application               : Starting application on win7-PC with PID 22068 (started by win7 in F:\网上资源存放点\rocketmq-demo\springboot_mq)
+2018-07-02 19:16:02.650  INFO 22068 --- [main] com.lishenming.application               : The following profiles are active: me
+2018-07-02 19:16:02.698  INFO 22068 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@663c9e7a: startup date [Mon Jul 02 19:16:02 CST 2018]; root of context hierarchy
+2018-07-02 19:16:04.375  INFO 22068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-02 19:16:04.386  INFO 22068 --- [main] com.lishenming.application               : Started application in 2.102 seconds (JVM running for 2.561)
+2018-07-02 19:18:39.526  INFO 19248 --- [main] com.lishenming.application               : Starting application on win7-PC with PID 19248 (started by win7 in F:\网上资源存放点\rocketmq-demo\springboot_mq)
+2018-07-02 19:18:39.529  INFO 19248 --- [main] com.lishenming.application               : The following profiles are active: me
+2018-07-02 19:18:39.574  INFO 19248 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3ba987b8: startup date [Mon Jul 02 19:18:39 CST 2018]; root of context hierarchy
+2018-07-02 19:18:41.282  INFO 19248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-02 19:18:41.294  INFO 19248 --- [main] com.lishenming.application               : Started application in 2.166 seconds (JVM running for 2.615)
