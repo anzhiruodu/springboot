@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="world.xsd">
+
+    <people>人妖</people>
+    <testplmn>
+        <testset>
+            <test1> test11</test1>
+            <test2>test22</test2>
+            <testcase1>testcase1</testcase1>
+        </testset>
+        <testset2>testset2</testset2>
+    </testplmn>
+    <plant>glass</plant>
+    <Inanimate_body></Inanimate_body>
+
+
+</world>

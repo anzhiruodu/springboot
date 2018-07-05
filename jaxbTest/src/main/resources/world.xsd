@@ -1,0 +1,51 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="world">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="people" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="testplmn"  minOccurs="1" maxOccurs="1" />
+                <xs:element name="plant" type="xs:string"/>
+                <xs:element name="Inanimate_body" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="desc" default="描述世界万物"/>
+        </xs:complexType>
+
+    </xs:element>
+    <xs:element name="people">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"><!-- 限定（restriction）用于为 XML 元素或者属性定义可接受的值  base="xs:string"必须写成string-->
+                <xs:enumeration value="男" />
+                <xs:enumeration value="女"/>
+                <xs:enumeration value="人妖"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="testplmn">
+        <xs:complexType>
+            <xs:sequence><!--这里放入group之后就可以生成一个数组。 maxOccurs="unbounded" 需要加这个限制，不然默认是一次，，相当于testset是一个组，组可以重复，所以生成的数list-->
+                <xs:group ref="testset" maxOccurs="unbounded"></xs:group>
+                <xs:element name="testset2"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:group name="testset">
+            <xs:sequence>
+            <!--您必须在 group 声明内部定义一个 all、choice 或者 sequence 元素-->
+                 <xs:group ref="testcase"></xs:group>
+                 <xs:element name="testcase1" type="xs:string" ></xs:element>
+            </xs:sequence>
+    </xs:group>
+
+    <xs:group name="testcase">
+        <xs:sequence>
+            <xs:element name="test1" type="xs:string"></xs:element>
+            <xs:element name="test2" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>
